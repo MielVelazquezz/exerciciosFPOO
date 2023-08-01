@@ -65,23 +65,36 @@ while(info != 0){
         // Perguntar 4 números e verificar se número é primo (if ou switch)
         case "3": 
 
-        //      function numPrimo(){
-        //         let num3 = []
+             function numPrimo(){
+                let num3 = []
 
-        //         for(var c = 0; c <= 3; c++){
+                for(var c = 0; c <= 3; c++){
             
-        //         let num3 = [readline.question("Digite 4 numeros (um de cada vez) ")] 
+                let num3 = [readline.question("Digite 4 numeros (um de cada vez) ")] 
 
-        //         if(num3 < 2){
-        //             console.log("Números primos devem ser maiores que 1 ")
+                console.log(num3[c])
 
-        //         }
-        //         else{}
+                let f = num3[c];
+                e = f/2;
 
-        //      }   
+                if(f == 0 || f == 1){
+                    console.log(f+" Não é um número primo")
+                }
+                else{
+                    for(g = 2; g < e; g++){
+                        if(f % g == 0){
+                            console.log(f+" Não é um número primo");
+                            h = 1;
 
-        // }
-        // numPrimo();
+                            break;
+                        }
+                    }
+                }
+
+             }   
+
+        }
+        numPrimo();
 
         break;
 
